@@ -10,6 +10,17 @@ body {
     padding: 0;
     text-align: center;
   }
+
+  .blend1 {
+    --bg-color: hsl(200 50% 20%);
+    background-color: var(--bg-color, black);
+    color: chartreuse;
+  }
+
+  .blend2 {
+    box-shadow: 0 0 0 100vmax var(--bg-color, black);
+    clip-path: inset(0 -100vmax);
+  }
   
   .navigation li {
     font-weight: 100;
